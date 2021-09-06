@@ -1,23 +1,26 @@
 import React from 'react';
 
 const Nav =()=>{
+    const menuSelected=()=>{
+        console.log("hello");
+    }
     return(
-        <header>
-            <h2>Ankur Shahi</h2>
-            <ul className="flex-row">
+        <header className="flex-row">
+            <h2 className="mx-2">Ankur Shahi</h2>
+            <ul className="flex-row flex-end">
                 <li className="mx-2">
                     <a href="#about">
                         About me
                     </a>
                 </li>
-                <li>
-                <span>Portfolio</span>
+                <li className="mx-2">
+                    <span onClick={menuSelected}>Portfolio</span>
                 </li>
-                <li>
-                <span>Contact</span>
+                <li className="mx-2">
+                    <span onClick={menuSelected}>Contact</span>
                 </li>
-                <li>
-                <span>Resume</span>
+                <li className="mx-2">
+                    <span onClick={menuSelected}>Resume</span>
                 </li>
             </ul>
         </header>
