@@ -1,26 +1,27 @@
 import React from 'react';
 
 const Nav =()=>{
-    const menuSelected=()=>{
-        console.log("hello");
+    
+    const handleClick=()=>{
+        console.log("click handled");
     }
     return(
-        <header className="flex-row">
+        <header className="flex-row px-1">
             <h2 className="mx-2">Ankur Shahi</h2>
-            <ul className="flex-row flex-end">
+            <ul className="flex-row">
                 <li className="mx-2">
-                    <a href="#about">
+                    <a href="#about" onClick={()=> handleClick()}>
                         About me
                     </a>
                 </li>
                 <li className="mx-2">
-                    <span onClick={menuSelected}>Portfolio</span>
+                    <span onClick={() => handleClick()}>Portfolio</span>
                 </li>
                 <li className="mx-2">
-                    <span onClick={menuSelected}>Contact</span>
+                    <span onClick={() => handleClick()}>Contact</span>
                 </li>
                 <li className="mx-2">
-                    <span onClick={menuSelected}>Resume</span>
+                    <span onClick={() => handleClick()}>Resume</span>
                 </li>
             </ul>
         </header>
