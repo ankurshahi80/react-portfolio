@@ -1,29 +1,36 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-const Nav =()=>{
+const Nav =(props)=>{
+
+    const navList =['About Me', 'Portfolio', 'Contact', 'Resume']
     
-    const handleClick=()=>{
-        console.log("click handled");
-    }
     return(
-        <header className="flex-row px-1">
-            <h2 className="mx-2">Ankur Shahi</h2>
-            <ul className="flex-row">
-                <li className="mx-2">
-                    <a href="#about" onClick={()=> handleClick()}>
-                        About me
-                    </a>
-                </li>
-                <li className="mx-2">
-                    <span onClick={() => handleClick()}>Portfolio</span>
-                </li>
-                <li className="mx-2">
-                    <span onClick={() => handleClick()}>Contact</span>
-                </li>
-                <li className="mx-2">
-                    <span onClick={() => handleClick()}>Resume</span>
-                </li>
-            </ul>
+        <header className="navbar">
+            <div className="wrapper">
+                <div className="left">
+                    <h2>
+                        <a href="/">Ankur Shahi</a>
+                    </h2>
+                </div>
+                <div className="right">
+                    <nav>
+                        <ul className="flex-row">
+                            { navList.map(nav => (
+                                <li class="mx-2" key={nav}>
+                                    <a
+                                        onClick={()=>props.handlePageChange(nav)}
+                                        className={
+                                            props.currentPage===nav?'nav-link active':'nav-link'
+                                        }
+                                    >
+                                        {nav}        
+                                    </a>
+                                </li>            
+                            ))}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
     )
 };

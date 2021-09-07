@@ -1,9 +1,9 @@
 import React from 'react';
 import displayImage from "../../assets/displayImage.jpeg"
-const About=()=>{
+const About=({setCurrentLink})=>{
     return(
-        <section className="my-5">
-            <h1 id="about">About Me</h1>
+        <section id="about" className="my-5">
+            <h1>About Me</h1>
             <img 
                 src={displayImage} 
                 className="my-2" 
