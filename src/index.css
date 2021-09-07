@@ -381,3 +381,27 @@ a {
   background-size: 85% 2px;
   border-radius: 25%;
 }
+
+.layer {
+  width: 500px;
+  height: 250px;
+  background-color: #ffffff00;
+  z-index: 100;
+}
+
+.layer:hover {
+  animation: fadeIn 500ms linear;
+  background-color: #ffffff96;
+}
+
+.project-box {
+  position: relative;
+}
+.project-tag {
+  width:160px;
+  position:absolute;
+  bottom:20px;
+  left: 0%;
+  
+  
+}

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 const Nav =(props)=>{
 
@@ -17,10 +17,10 @@ const Nav =(props)=>{
                         <ul className="flex-row">
                             { navList.map(nav => (
                                 <li class="mx-2" key={nav}>
-                                    <a
+                                    <a  href={'#'+ nav.toLowerCase()}
                                         onClick={()=>props.handlePageChange(nav)}
                                         className={
-                                            props.currentPage===nav?'nav-link active':'nav-link'
+                                            props.currentPage===nav?'nav navActive':'nav'
                                         }
                                     >
                                         {nav}        
