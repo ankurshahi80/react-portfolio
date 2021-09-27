@@ -38,12 +38,12 @@ const Project=()=>{
             description: 'Deep Thoughts - a MERN app'
         },
         { 
-            name: 'FoodFestival', 
-            displayName:'Food Festival',
-            background:require(`../../assets/FoodFestival.jpg`).default,
-            link: 'https://ankurshahi80.github.io/food-festival/',
-            github:'https://github.com/ankurshahi80/food-festival',
-            description: 'Food Festival - a Progressive Web App'
+            name: 'VintageVinyls', 
+            displayName:'Vintage Vinyl Records',
+            background:require(`../../assets/VintageVinyls.jpg`).default,
+            link: 'https://vintage-vinyls.herokuapp.com/',
+            github:'https://github.com/group01-project03/vintage-vinyl-records',
+            description: 'Vintage Vinyl Records - a MERN app'
         },
         { 
             name: 'PizzaHunt', 
