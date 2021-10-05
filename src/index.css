@@ -145,6 +145,10 @@ form {
   width: 40%;
 }
 
+label{
+  display: block;
+  margin-top: 1.2rem;
+}
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -152,6 +156,18 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+}
+
+input:required{
+  outline: 2px solid #B12704;
+}
+
+input[type="email"]:valid {
+  border-color: green;
+}
+
+input[type="email"]:invalid {
+  border-color: red;
 }
 
 input:focus {

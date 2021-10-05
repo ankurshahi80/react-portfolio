@@ -42,7 +42,7 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input type="text" name="name" defaultValue={name} onBlur={handleChange} required/>
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
