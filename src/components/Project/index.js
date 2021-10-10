@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiFillGithub, AiFillLinkedin,AiOutlineMail,AiFillPhone } from 'react-icons/ai';
 
 const Project=()=>{
 
@@ -60,17 +61,19 @@ const Project=()=>{
     }
     return (
         <div>
-            <div className="flex-row">
+            <div className="flex-row space-between">
                 {projects.map((project,i)=>(
                     <div className="project-box">
                         <img
                             src={require(`../../assets/${project.name}.jpg`).default}
                             alt={project.description}
-                            className="img-thumbnail mx-1"
+                            className="img-thumbnail"
+                            // className="cover"
                             key={project.name}
                             onClick={()=>showProject(project.link)}
                         />
-                        <a href={project.github} target="_blank" rel="noreferrer" className="project-tag"><img src={github}/></a>
+                        {/* <a href={project.github} target="_blank" rel="noreferrer" className="project-tag"><img src={github}/></a> */}
+                        <a href={project.github} target="_blank" rel="noreferrer" className="project-tag" ><span><AiFillGithub  color="black" size="2em"/></span></a>
                     </div>
                 ))}
             </div>

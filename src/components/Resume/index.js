@@ -4,8 +4,8 @@ import resumePDF from '../../assets/AnkurShahi.pdf';
 
 const Resume = ()=>{
     return(
-        <section className="resume-section">
-            <h1>Resume</h1>
+        <section className="resume-section, my-5">
+            <h1 className="my-2">Resume</h1>
             <div>
                 <h2>Work History</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur voluptas adipisci eveniet expedita dolor, quaerat commodi quidem ipsa illum inventore harum officia. Animi omnis veniam ad voluptas dolores officia!</p>

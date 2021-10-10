@@ -17,6 +17,7 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
+
 :root {
   --primary: #8c54ff;
   --secondary: #F3A847;
@@ -24,6 +25,7 @@ main {
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
+  --text:#3b4348;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -47,9 +49,10 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
-  font-family: 'Poiret One', cursive;
+  background: var(--light);
+  /* background-image: linear-gradient(to bottom, #cfdeee 0%, #8da9cf 100%); */
+  color: var(--text);
+  font-family: 'Georgia Pro',Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -67,10 +70,13 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  border-bottom: 2px solid var(--secondary);
+  display: inline-block;
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -100,9 +106,9 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 header {
   background: var(--dark);
@@ -179,13 +185,23 @@ li {
   list-style: none;
 }
 
+.nav {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
 nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
 }
+
+/* .flex-row li {
+  flex:1 0 0%;
+} */
 
 textarea {
 	width: 600px;
@@ -204,6 +220,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .space-between {
@@ -265,14 +282,15 @@ textarea {
 }
 
 .img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
   cursor: pointer;
+  float: left;
+  object-fit: cover;
 }
 
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
+	/* background: rgba(0, 0, 0, .65); */
 	bottom: 0;
 	left: 0;
 	overflow: auto;
@@ -283,7 +301,7 @@ textarea {
 }
 
 .modalContainer {
-	background: var(--darker);
+	/* background: var(--darker); */
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -331,18 +349,15 @@ a {
 }
 
 .navbar {
-  width:100%;
-  height: 70px;
-  /* position: fixed;
-  top:0;
-  z-index: 2; */
-}
-
-.wrapper {
   padding: 10px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width:100%;
+  height: auto;
+  position: fixed;
+  /* top:0;*/
+  z-index: 2; 
 }
 
 .footer-wrapper {
@@ -358,10 +373,6 @@ a {
   display:flex;
   padding:0;
   /* max-width: 33%; */
-}
-
-.right {
-  max-width:60%;
 }
 
 /* contact-icons */
@@ -410,14 +421,22 @@ a {
   background-color: #ffffff96;
 }
 
-.project-box {
+.flex-row .project-box {
+  box-sizing: border-box;
   position: relative;
+  width: 33%;
 }
+
 .project-tag {
-  width:160px;
   position:absolute;
-  bottom:20px;
-  left: 0%;
-  
-  
+  margin-left: -60%;
+  margin-top: 25%;
+  display: none;
 }
+.project-tag:hover {
+  display: inline-block;
+}
+.img-thumbnail:hover +.project-tag {
+  display: inline-block;
+}
+

@@ -6,31 +6,27 @@ const Nav =(props)=>{
     
     return(
         <header className="navbar">
-            <div className="wrapper">
                 <div className="left">
                     <h2>
                         <a href="/">Ankur Shahi</a>
                     </h2>
                 </div>
-                <div className="right">
-                    <nav>
-                        <ul className="flex-row">
-                            { navList.map(nav => (
-                                <li class="mx-2" key={nav}>
-                                    <a  href={'#'+ nav.toLowerCase()}
-                                        onClick={()=>props.handlePageChange(nav)}
-                                        className={
-                                            props.currentPage===nav?'nav navActive':'nav'
-                                        }
-                                    >
-                                        {nav}        
-                                    </a>
-                                </li>            
-                            ))}
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                <nav>
+                    <ul className=" flex-row flex-end">
+                        { navList.map(nav => (
+                            <li class="mx-2" key={nav}>
+                                <a  href={'#'+ nav.toLowerCase()}
+                                    onClick={()=>props.handlePageChange(nav)}
+                                    className={
+                                        props.currentPage===nav?'nav navActive':'nav'
+                                    }
+                                >
+                                    {nav}        
+                                </a>
+                            </li>            
+                        ))}
+                    </ul>
+                </nav>
         </header>
     )
 };
