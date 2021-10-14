@@ -199,9 +199,10 @@ nav li {
   cursor: pointer;
 }
 
-/* .flex-row li {
-  flex:1 0 0%;
-} */
+.flex-row li {
+  flex:1 0 auto;
+  text-align: right;
+}
 
 textarea {
 	width: 600px;
@@ -221,6 +222,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin:0;
 }
 
 .space-between {
@@ -440,3 +442,32 @@ a {
   display: inline-block;
 }
 
+@media screen and (max-width:420px) {
+  .flex-row .project-box {
+    width: 100%;
+  }
+  
+  .navbar {
+    flex-wrap: wrap;
+    padding:0;
+    justify-content: center;
+    padding-top: var(--spacing-one);
+    
+  }
+
+  .navbar .left {
+    display: block;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .navbar .flex-row li {
+    font-size: 0.75rem;
+    margin-right: var(--spacing-one);
+    margin-left: var(--spacing-one)
+  }
+  nav {
+    width:100%;
+  }
+
+}
