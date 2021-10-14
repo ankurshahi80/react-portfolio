@@ -463,11 +463,13 @@ a {
 
   .navbar .flex-row li {
     font-size: 0.75rem;
-    margin-right: var(--spacing-one);
-    margin-left: var(--spacing-one)
+    margin: 0 var(--spacing-one) var(--spacing-one);
   }
   nav {
     width:100%;
   }
-
+  nav li a {
+    padding: 0px;
+    text-align: center;
+  }
 }
