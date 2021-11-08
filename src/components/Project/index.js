@@ -63,21 +63,20 @@ const Project=()=>{
         <div>
             <div className="flex-row space-between">
                 {projects.map((project,i)=>(
-                    <div className="project-box">
-                        <img
+                    <div className="project-box" key={i} style={{backgroundImage: `url(${project.background})`}}>
+                        {/* <img
                             src={require(`../../assets/${project.name}.jpg`).default}
                             alt={project.description}
                             className="img-thumbnail"
                             // className="cover"
                             key={project.name}
                             onClick={()=>showProject(project.link)}
-                        />
+                        /> */}
                         {/* <a href={project.github} target="_blank" rel="noreferrer" className="project-tag"><img src={github}/></a> */}
                         <a href={project.github} target="_blank" rel="noreferrer" className="project-tag" ><span><AiFillGithub  color="black" size="2em"/></span></a>
                     </div>
                 ))}
             </div>
-            
         </div>
     )
 }

@@ -4,14 +4,15 @@ import resumePDF from '../../assets/AnkurShahi.pdf';
 
 const Resume = ()=>{
     return(
-        <section className="resume-section, my-5">
-            <h1 className="my-2">Resume</h1>
-            <div>
-                <h2>Work History</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consectetur voluptas adipisci eveniet expedita dolor, quaerat commodi quidem ipsa illum inventore harum officia. Animi omnis veniam ad voluptas dolores officia!</p>
+        <section className="resume-section">
+            <h2 className="my-2">Resume</h2>
+
+            <div className="resume-download">
+                <p>Download my <a className="downloadButton" href={resumePDF} download="resume_ankur.pdf">resume</a>.</p>
             </div>
+            
             <div>
-                <h2>Technical Skills</h2>
+                <h3>Front-end Proficiencies</h3>
                 <ul>
                     <li>
                         <p>HTML</p>
@@ -23,36 +24,55 @@ const Resume = ()=>{
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <p>Node.js</p>
+                        <p>jQuery</p>
                     </li>
                     <li>
-                        <p>Express.js</p>
+                        <p>responsive design</p>
                     </li>
                     <li>
                         <p>React</p>
                     </li>
                     <li>
-                        <p>SQL, mySQL2</p>
+                        <p>Bootstrap</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Back-end Proficiencies</h3>
+                <ul>
+                    <li>
+                        <p>APIs</p>
                     </li>
                     <li>
-                        <p>noSQL, MongoDB</p>
+                        <p>Node</p>
+                    </li>
+                    <li>
+                        <p>Express</p>
+                    </li>
+                    <li>
+                        <p>MySQL, Sequelize</p>
+                    </li>
+                    <li>
+                        <p>MongoDB, Mongoose</p>
+                    </li>
+                    <li>
+                        <p>REST</p>
+                    </li>
+                    <li>
+                        <p>GraphQL</p>
                     </li>
                 </ul>
             </div>
+
             <div>
-                <h2>Education History</h2>
+                <h3>Education History</h3>
                 <ul>
-                    <li>Program: Coding Boot Camp</li>
+                    <li>Program: Full-Stack Web Development Certificate</li>
                     <li>Year: 2021</li>
-                    <li>University: University of Toronto</li>
+                    <li>University: University of Toronto School of Continuing Studies</li>
                 </ul>
             </div>
-            
-        <div className="resume-download">
-            <h3 className="title-3">Download My Resume.</h3>
-            <p>If you would like to know more, please download my resume!</p>
-            <a className="downloadButton" href={resumePDF} download="resume_ankur.pdf">Download PDF</a>
-        </div>
     </section>
     )
 };

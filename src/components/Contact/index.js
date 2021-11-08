@@ -37,8 +37,8 @@ function Contact() {
   };
 
   return (
-    <section className="my-5">
-      <h1 data-testid="h1tag" className="my-2">Contact me</h1>
+    <section>
+      <h2 data-testid="h1tag" className="my-2">Contact me</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Your Name</label>
         <input type="text" name="name" defaultValue={name} onBlur={handleChange} required/>
