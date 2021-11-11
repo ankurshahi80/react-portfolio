@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.3caf0a3a.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.1e182e8e.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.1e182e8e.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.78c99b01.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.8b3e9409.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.8b3e9409.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.a9a140ee.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.a9a140ee.js.map",
-    "static/js/2.5a4b53e9.chunk.js": "/react-portfolio/static/js/2.5a4b53e9.chunk.js",
-    "static/js/2.5a4b53e9.chunk.js.map": "/react-portfolio/static/js/2.5a4b53e9.chunk.js.map",
+    "static/js/2.ae43ff32.chunk.js": "/react-portfolio/static/js/2.ae43ff32.chunk.js",
+    "static/js/2.ae43ff32.chunk.js.map": "/react-portfolio/static/js/2.ae43ff32.chunk.js.map",
     "static/js/3.4f680263.chunk.js": "/react-portfolio/static/js/3.4f680263.chunk.js",
     "static/js/3.4f680263.chunk.js.map": "/react-portfolio/static/js/3.4f680263.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.3caf0a3a.chunk.css.map": "/react-portfolio/static/css/main.3caf0a3a.chunk.css.map",
-    "static/js/2.5a4b53e9.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.5a4b53e9.chunk.js.LICENSE.txt",
-    "static/media/AnkurShahi.cb819cdd.pdf": "/react-portfolio/static/media/AnkurShahi.cb819cdd.pdf",
+    "static/css/main.78c99b01.chunk.css.map": "/react-portfolio/static/css/main.78c99b01.chunk.css.map",
+    "static/js/2.ae43ff32.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.ae43ff32.chunk.js.LICENSE.txt",
+    "static/media/AnkurShahi.4c1b4804.pdf": "/react-portfolio/static/media/AnkurShahi.4c1b4804.pdf",
     "static/media/CoWorkers.jpg": "/react-portfolio/static/media/CoWorkers.09748479.jpg",
     "static/media/CountingCalories.jpg": "/react-portfolio/static/media/CountingCalories.8b9d6ac7.jpg",
     "static/media/DeepThoughts.jpg": "/react-portfolio/static/media/DeepThoughts.2f4e3971.jpg",
-    "static/media/FoodFestival.jpg": "/react-portfolio/static/media/FoodFestival.ff263e03.jpg",
     "static/media/GitHub-logo.png": "/react-portfolio/static/media/GitHub-logo.a7cb412d.png",
     "static/media/PizzaHunt.jpg": "/react-portfolio/static/media/PizzaHunt.7e9bcf90.jpg",
     "static/media/RunBuddy.jpg": "/react-portfolio/static/media/RunBuddy.07f75537.jpg",
@@ -25,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a9a140ee.js",
-    "static/js/2.5a4b53e9.chunk.js",
-    "static/css/main.3caf0a3a.chunk.css",
-    "static/js/main.1e182e8e.chunk.js"
+    "static/js/2.ae43ff32.chunk.js",
+    "static/css/main.78c99b01.chunk.css",
+    "static/js/main.8b3e9409.chunk.js"
   ]
 }
