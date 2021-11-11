@@ -271,9 +271,29 @@ header nav ul {
   text-align: center;
 }
 
+.project-info {
+  position:absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+  color: var(--light);
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
 .project-box:hover .project-tag {
   display: block;
   margin: 0;
+}
+.project-box:hover .project-info {
+  display: block;
+  margin: 0;
+}
+
+.project-link:hover {
+  cursor: pointer;
+  color:var(--tertiary);
 }
 
 .project-link {
