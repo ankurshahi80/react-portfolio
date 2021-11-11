@@ -13,7 +13,7 @@ const Resume = ()=>{
             
             <div>
                 <h3>Front-end Proficiencies</h3>
-                <ul>
+                <ul className="resume-info">
                     <li>
                         <p>HTML</p>
                     </li>
@@ -27,7 +27,7 @@ const Resume = ()=>{
                         <p>jQuery</p>
                     </li>
                     <li>
-                        <p>responsive design</p>
+                        <p>Responsive design</p>
                     </li>
                     <li>
                         <p>React</p>
@@ -40,7 +40,7 @@ const Resume = ()=>{
 
             <div>
                 <h3>Back-end Proficiencies</h3>
-                <ul>
+                <ul className="resume-info">
                     <li>
                         <p>APIs</p>
                     </li>
@@ -67,7 +67,7 @@ const Resume = ()=>{
 
             <div>
                 <h3>Education History</h3>
-                <ul>
+                <ul className="edu-info">
                     <li>Program: Full-Stack Web Development Certificate</li>
                     <li>Year: 2021</li>
                     <li>University: University of Toronto School of Continuing Studies</li>
